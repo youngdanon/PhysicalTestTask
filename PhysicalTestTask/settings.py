@@ -120,3 +120,5 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 START_DATE = datetime(year=2018, month=12, day=30)
+STATIC_ROOT = '/static/'
+STATIC_URL = '/static/'
