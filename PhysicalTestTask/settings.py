@@ -14,6 +14,8 @@ from pathlib import Path
 from datetime import datetime
 import os
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
+from django.templatetags.static import static
+
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 # Quick-start development settings - unsuitable for production
@@ -113,6 +115,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
 STATIC_URL = 'static/'
+STATIC_ROOT = 'static/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
@@ -120,5 +123,3 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 START_DATE = datetime(year=2018, month=12, day=30)
-STATIC_ROOT = '/static/'
-STATIC_URL = '/static/'
