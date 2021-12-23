@@ -15,4 +15,4 @@ class WeekApiTestCase(APITestCase):
 
         url = '/api/week/'
         response = self.client.get(url)
-        self.assertEqual(response.data, {'error': 'empty request query'})
+        self.assertEqual(response.data, {'error': 'empty or not allowed query params'})

@@ -14,4 +14,4 @@ class WeekCounterView(APIView):
             else:
                 return Response({'week': weeks_amount})
         else:
-            return Response({'error': 'empty request query'}, status=400, exception=True)
+            return Response({'error': 'empty or not allowed query params'}, status=400, exception=True)
