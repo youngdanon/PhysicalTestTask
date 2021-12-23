@@ -3,7 +3,7 @@
 A simple REST tool for determining the week number. December 30, 2018 - the 1st day of the 1st week.
 
 
-###How to use
+### How to use
 Run in the terminal:
 ```
 git clone https://github.com/youngdanon/PhysicalTestTask.git
@@ -21,12 +21,12 @@ Send a `GET` request in the following format
 GET /api/week/?date=dd_mm_yyyy
 ```
 Also you can test it on [my site](http://dfarsal1.fvds.ru/api/week/?date=6_01_2019)
-###Example
-####request
+### Example
+#### request
 ```
 GET /api/week/?date=6_01_2019
 ```
-####response
+#### response
 ```
 HTTP 200 OK
 Allow: GET, HEAD, OPTIONS
